@@ -1,0 +1,1 @@
+<?php $ssl_server = "https://www70.secrel.com.br/eao/"; if(isset($_SERVER) && $_SERVER['HTTPS']): echo 1; else: header("Location: " . $ssl_server . substr( $_SERVER["SCRIPT_NAME"],5)  . "?". $_SERVER["QUERY_STRING"] ); endif; ?>
